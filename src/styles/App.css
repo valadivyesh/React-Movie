@@ -1,0 +1,26 @@
+/* Essential styles for the Movie Library App */
+
+.App {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+/* Ensure images maintain aspect ratio in cards */
+.card-img-top {
+  height: 350px;
+  object-fit: cover;
+}
+
+/* Simple transition for hover effect on cards */
+.card {
+  transition: transform 0.2s;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+}
